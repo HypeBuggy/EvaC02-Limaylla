@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller // This means that this class is a Controller
-@RequestMapping(path = "/api") // This means URL's start with /demo (after Application path)
+@RequestMapping(path = "/api/curso") // This means URL's start with /demo (after Application path)
 public class CursoController {
     @Autowired // This means to get the bean called userRepository
     private CursoRepository CursoRepository;
 
-    @PostMapping(path = "/curso/nuevo") // Map ONLY POST Requests
+    @PostMapping(path = "/nuevo") // Map ONLY POST Requests
     public @ResponseBody String addNewCurso(@RequestParam String name, @RequestParam Integer creditos) {
         // @ResponseBody means the returned String is the response, not a view name
         // @RequestParam means it is a parameter from the GET or POST request
@@ -29,7 +29,7 @@ public class CursoController {
         return "Saved";
     }
 
-    @GetMapping(path = "/curso/listar")
+    @GetMapping(path = "/listar")
     public @ResponseBody Iterable<Curso> getAllCursos() {
         return CursoRepository.findAll();
     }
@@ -56,7 +56,7 @@ public class CursoController {
 
     // }
 
-    @DeleteMapping(path = "/curso/eliminar")
+    @DeleteMapping(path = "/eliminar")
     public @ResponseBody String deleteCurso(@RequestParam Integer id) {
         Curso curso = CursoRepository.findById(id).orElse(null);
         if (curso != null) {

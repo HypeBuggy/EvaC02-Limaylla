@@ -1,4 +1,4 @@
-@subdominio = evac02LimayllaHans
+@subdominio = evac02-limayllahans
 # 1: Mostrar su código IDAT y su nombre en el siguiente formato: CÓDIGO - NOMBRE
 GET https://{{subdominio}}.onrender.com/
 ###

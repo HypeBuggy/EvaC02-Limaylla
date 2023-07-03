@@ -19,7 +19,7 @@ public class Controller {
         return "AT75268140";
     }
 
-    @GetMapping(path = "/idat/nombre")
+    @GetMapping(path = "/idat/nombre-completo")
     public String idatNom() {
         return "HANS JEFFERSON LIMAYLLA CERRÓN";
     }
