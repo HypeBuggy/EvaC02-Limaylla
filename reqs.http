@@ -7,6 +7,8 @@ GET https://{{subdominio}}.onrender.com/idat/codigo
 ###
 # 3: Mostrar su nombre completo
 GET https://{{subdominio}}.onrender.com/idat/nombrecompleto
+###
+GET http://localhost:8080/idat/nombrecompleto 
 ##############################################
 #         Requests CON base de datos         #
 ##############################################
