@@ -21,6 +21,6 @@ public class Controller {
 
     @GetMapping(path = "/idat/nombre-completo")
     public String idatNom() {
-        return "HANS JEFFERSON LIMAYLLA CERRÓN";
+        return "hans jefferson limaylla cerron";
     }
 }
