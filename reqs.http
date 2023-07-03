@@ -6,7 +6,7 @@ GET https://{{subdominio}}.onrender.com/
 GET https://{{subdominio}}.onrender.com/idat/codigo
 ###
 # 3: Mostrar su nombre completo
-GET https://{{subdominio}}.onrender.com/idat/nombre-completo
+GET https://{{subdominio}}.onrender.com/idat/nombrecompleto
 ##############################################
 #         Requests CON base de datos         #
 ##############################################
